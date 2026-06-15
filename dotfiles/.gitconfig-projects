@@ -1,0 +1,10 @@
+[user]
+	name=MatricalDefunkt
+	email=dev@matricaldefunkt.me
+	signingkey=362E222A7519FF4D
+
+[commit]
+	gpgsign=true
+
+[tag]
+	gpgSign=true

@@ -1,0 +1,11 @@
+[user]
+	name=pramit.sharma
+	email=pramit.sharma@mobigic.com
+	signingkey=47A60B82B107033DCEC04521B920CD346FCEADF2
+[commit]
+	gpgsign=true
+
+[credential]
+  helper = store --file ~/.git-credentials-mobigic
+[credential "https://git.mobigic.com"]
+  username = pramit.sharma

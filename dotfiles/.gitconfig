@@ -1,0 +1,34 @@
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+
+[include]
+	path = ~/.gitconfig-projects
+
+[includeIf "gitdir:~/codex/"]
+	path = ~/.gitconfig-codex
+
+[includeIf "gitdir:~/work/"]
+	path = ~/.gitconfig-work
+
+[includeIf "gitdir:~/mobigic/"]
+	path = ~/.gitconfig-mobigic
+
+[pull]
+	ff = only
+  autostash = true
+
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[http]
+	postBuffer = 1048576000
+	lowSpeedLimit = 0
+	lowSpeedTime = 999999

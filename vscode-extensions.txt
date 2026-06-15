@@ -1,0 +1,9 @@
+anthropic.claude-code
+donjayamanne.githistory
+foxundermoon.shell-format
+google.gemini-cli-vscode-ide-companion
+ms-azuretools.vscode-containers
+oderwat.indent-rainbow
+pkief.material-icon-theme
+ritwickdey.liveserver
+tamasfe.even-better-toml

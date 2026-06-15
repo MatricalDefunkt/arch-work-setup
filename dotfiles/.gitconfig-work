@@ -1,0 +1,7 @@
+[user]
+	name=pramit-phc
+	email=pramit.dev@projecthumancity.com
+	signingkey=CAC84F897BED8CF2 
+[commit]
+	gpgsign=true
+
