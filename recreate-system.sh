@@ -80,15 +80,7 @@ cp "$SCRIPT_DIR/dotfiles/.ssh/config" "$HOME/.ssh/config"
 # Fix SSH config permissions
 chmod 600 "$HOME/.ssh/config"
 
-# 7. Install VS Code Extensions
-if [ -f "$SCRIPT_DIR/vscode-extensions.txt" ] && command -v code &>/dev/null; then
-    echo "Installing VS Code extensions..."
-    while read -r ext; do
-        if [ -n "$ext" ]; then
-            code --install-extension "$ext" --force
-        fi
-    done < "$SCRIPT_DIR/vscode-extensions.txt"
-fi
+
 
 # 8. Setup & Start System Services
 echo "Configuring services..."
